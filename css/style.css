@@ -19,7 +19,7 @@ a, a:hover{
 .header-section{
   width: 100%;
   background: url(../img/banner.png) center top no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 
@@ -46,6 +46,7 @@ a, a:hover{
   border-bottom: 2px solid #ffc178;
 }
 .menu-section .navbar-light .navbar-nav .btn-info{
+  margin-left: 10px;
   padding: 10px 35px;
   font-size: 15px;
   font-weight: 700;
@@ -72,14 +73,15 @@ a, a:hover{
 .banner-section .banner-inner{
   width: 100%;
   padding: 0px 0px 40px;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: -3%;
 }
 .banner-section .banner-inner h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   color: #ffc178;
+  margin-bottom: 15px;
 }
 .banner-section .banner-inner p{
   font-size: 14px;
@@ -119,11 +121,11 @@ a, a:hover{
   text-align: center;
 }
 .feature-section .title h2{
-  font-family: 'Work Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
   color: #708189;
+  margin-top: -13%;
 }
 .feature-section .title p{
   font-size: 14px;
@@ -137,36 +139,17 @@ a, a:hover{
   text-align: center;
   border-radius: 3px;
 }
-.feature-section .service-inner img{
-  margin-bottom: -20px;
-  border-radius: 3px;
-}
 .feature-section .bg-1{
   width: 100%;
   background: #f9703a;
-  padding: 5px 0px 30px;
-  transition: .5s;
-}
-.feature-section .bg-1:hover{
-  transform: scale(1.1);
 }
 .feature-section .bg-2{
   width: 100%;
   background: #80be41;
-  padding: 5px 0px 30px;
-  transition: .5s;
-}
-.feature-section .bg-2:hover{
-  transform: scale(1.1);
 }
 .feature-section .bg-3{
   width: 100%;
   background: #ffb258;
-  padding: 5px 0px 30px;
-  transition: .5s;
-}
-.feature-section .bg-3:hover{
-  transform: scale(1.1);
 }
 .feature-section .service-inner h4{
   font-size: 20px;
@@ -180,12 +163,6 @@ a, a:hover{
 .limitless-section{
   width: 100%;
   padding: 80px 0px 40px;
-}
-.limitless-section .image-inner{
-  width: 100%;
-}
-.limitless-section .text-inner{
-  width: 100%;
 }
 .limitless-section .text-inner h2{
   font-size: 30px;
@@ -264,14 +241,10 @@ a, a:hover{
   width: 100%;
   padding-bottom: 10px;
   box-shadow: 2px 5px 20px #ccc;
-  transition: .5s;
-}
-.portfolio-section .portfolio-inner:hover{
-  transform: scale(1.1);
 }
 .portfolio-section .portfolio-text h4{
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: #252c3a;
   margin-top: 20px;
   margin-left: 15px;
@@ -286,13 +259,13 @@ a, a:hover{
   margin-left: 15px;
 }
 .portfolio-section .portfolio-text .btn-link{
-  font-size: 16px;
-  font-weight: 600;
-  color: #252c3a;
+  font-size: 15px;
+  font-weight: 900;
+  color: #708189;
   text-decoration: none;
 }
 .portfolio-section .portfolio-text .btn-link:hover{
-  color: #ffba00;
+  color: #252c3a;
 }
 /* ===== Portfolio Section Ended ===== */
 
@@ -301,6 +274,9 @@ a, a:hover{
 .footer-section{
   width: 100%;
 }
+
+
+/* ===== Top-Footer Section Started ===== */
 .footer-section .top-footer{
   width: 100%;
   padding: 80px 0px 60px;
@@ -314,10 +290,11 @@ a, a:hover{
 }
 .footer-section .footer-inner p{
   color: #969595;
+  font-size: 14px;
 }
 .footer-section .footer-inner .hori{
   border: 1px solid #969595;
-  width: 90%;
+  width: 100%;
   height: 2px;
   margin-bottom: 15px;
 }
@@ -341,11 +318,15 @@ a, a:hover{
   font-weight: 700;
   margin-bottom: 40px;
 }
+.footer-section .mar p{
+  margin-bottom: 20px;
+}
 .footer-section .footer-inner .list li{
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 .footer-section .footer-inner .list li a{
+  font-size: 14px;
   color: #969595;
   text-decoration: none;
 }
@@ -353,8 +334,13 @@ a, a:hover{
   color: #ffba00;
 }
 .footer-section .footer-inner .ibt .form-control{
-  width: 110%;
-  padding: 0px 30px 0px 10px;
+  width: 100%;
+  padding: 0px 10px;
+  border: 1px solid #fff;
+}
+.footer-section .footer-inner .ibt .form-control:focus{
+  box-shadow: none;
+  border: 1px solid #fff;
 }
 .footer-section .footer-inner .ibt{
   position: relative;
@@ -362,23 +348,26 @@ a, a:hover{
 .footer-section .footer-inner .ibt .btn-info{
   text-transform: uppercase;
   background: #ffc178;
-  border: 1px solid #ffc178;
+  padding: 7px 20px 8px;
   position: absolute;
-  top: 0;
-  right: -10%;
+  font-size: 14px;
+  top: 0%;
+  right: 0%;
+  border: 1px solid #ffc178;
 }
 .footer-section .footer-inner .ibt .btn-info:hover{
   color: #ffba00;
   background: #969595;
   border: 1px solid #969595;
 }
-.footer-section .mll{
-  margin-left: 30px;
+.footer-section .footer-inner .ibt .btn-info:focus{
+  border-bottom: 1px solid #969595;
+  box-shadow: none;
 }
-.footer-section .ml{
-  margin-left: 60px;
-}
+/* ===== Top-Footer Section Ended ===== */
 
+
+/* ===== Bottom-Footer Section Started ===== */
 .footer-section .bottom-footer{
   width: 100%;
   padding: 30px 0px;
@@ -386,9 +375,11 @@ a, a:hover{
 }
 .footer-section .bottom-footer .copyright{
   width: 100%;
+  font-size: 14px;
+  font-weight: 700;
   color: #969595;
   margin-left: 90px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .footer-section .bottom-footer .icon-list{
   margin-right: 50px;
@@ -400,11 +391,13 @@ a, a:hover{
   padding: 0px 10px;
 }
 .footer-section .bottom-footer .icon-list li a{
+  font-size: 14px;
+  font-weight: 700;
   color: #969595;
   text-decoration: none;
 }
 .footer-section .bottom-footer .icon-list li a:hover{
   color: #ffba00;
 }
+/* ===== Bottom-Footer Section Ended ===== */
 /* ===== Footer Section Ended ===== */
-
